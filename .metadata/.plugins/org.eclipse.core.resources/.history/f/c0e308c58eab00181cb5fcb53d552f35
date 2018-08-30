@@ -1,0 +1,12 @@
+/**
+ * 
+ */
+package beans;
+
+/**
+ * @author Shreya
+ *
+ */
+public interface Car {
+
+}

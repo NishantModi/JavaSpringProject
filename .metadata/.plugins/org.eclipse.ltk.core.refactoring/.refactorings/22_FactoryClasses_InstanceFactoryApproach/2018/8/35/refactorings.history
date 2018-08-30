@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy 3 packages to &apos;23_FactoryClasses_byUsingFactoryBeanApproach/src&apos;&#x0D;&#x0A;- Original project: &apos;22_FactoryClasses_InstanceFactoryApproach&apos;&#x0D;&#x0A;- Destination element: &apos;23_FactoryClasses_byUsingFactoryBeanApproach/src&apos;&#x0D;&#x0A;- Original elements:&#x0D;&#x0A;     22_FactoryClasses_InstanceFactoryApproach/src/test&#x0D;&#x0A;     22_FactoryClasses_InstanceFactoryApproach/src/beans&#x0D;&#x0A;     22_FactoryClasses_InstanceFactoryApproach/src/resources" description="Copy packages" destination="=23_FactoryClasses_byUsingFactoryBeanApproach/src" element1="/src&lt;test" element2="/src&lt;beans" element3="/src&lt;resources" flags="589830" fragments="3" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyPackages" stamp="1535550831718" version="1.0"/>
+</session>

@@ -1,0 +1,28 @@
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN"
+"http://www.springframework.org/dtd/spring-beans-2.0.dtd">
+<beans>
+
+	<bean id="t" class="beans.Test">
+		<property name="fruits">
+			<list>
+				<value>Apple</value>
+				<value>Mango</value>
+				<value>Mango</value> <!-- Duplicate allow -->
+			</list>
+		</property>
+		<property name="cricketers">
+			<set>
+				<value>Sachin</value>
+				<value>Shewag</value>
+				<value>Sachin</value> <!-- Ideally we should not pass duplicate value as Set will not allow -->
+			</set>
+		</property>
+		<property name="countryandcapitals">
+			<map>
+				<entry key="India" value="Delhi"/>
+				<entry key="Germany" value="Berin"/>
+			</map>
+		</property>		
+	</bean>
+
+</beans>

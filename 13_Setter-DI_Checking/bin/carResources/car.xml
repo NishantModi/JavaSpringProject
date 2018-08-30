@@ -1,0 +1,17 @@
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN"
+"http://www.springframework.org/dtd/spring-beans-2.0.dtd">
+
+<beans>
+	<!--  
+	dependency-check="none"   : no Need to call any setter
+	dependency-check="simple" : Must need to call primitive setter
+	dependency-check="object" : Must need to call secondary setter
+	dependency-check="all"    : Must need to call Both setter
+	-->
+	<bean id="car" class="autoBean.Car" dependency-check="all">
+		<property name="carType" value="Audi"></property>
+		<property name="carColor" value="BlueWhale"></property>	
+		<property name="engine" ref="engine"></property>
+	
+	</bean>
+</beans>

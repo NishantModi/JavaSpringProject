@@ -1,0 +1,23 @@
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN"
+"http://www.springframework.org/dtd/spring-beans-2.0.dtd">
+
+<beans>
+	
+	<!-- SINGLETON -->
+	<bean id="t" class="beans.Test">
+	</bean> 
+	
+	<!-- following error will occur if tag will not be closed properly -->
+	<!-- org.xml.sax.SAXParseException; lineNumber: 8; columnNumber: 7; The end-tag for element type "bean" must end with a '>' delimiter.
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.createSAXParseException(Unknown Source) -->
+	
+	<!-- if any tag which is not declared in dtd file following error will occur  -->
+	 <!-- 
+	 <abc></abc>
+	 The content of element type "beans" must match "(description?,(import|alias|bean)*)". -->
+	 
+	 <!-- PROTOYPE  
+	 <bean id="t" class="beans.Test" scope="prototype">
+	 </bean>
+	 -->
+</beans>

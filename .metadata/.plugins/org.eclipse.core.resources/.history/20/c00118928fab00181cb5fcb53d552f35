@@ -1,0 +1,11 @@
+package beans;
+
+public class Honda implements Car {
+
+	@Override
+	public void drive() {
+		// TODO Auto-generated method stub
+
+	}
+
+}

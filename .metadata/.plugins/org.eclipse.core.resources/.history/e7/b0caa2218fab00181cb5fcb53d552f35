@@ -1,0 +1,9 @@
+package beans;
+
+public class CarFactory {
+public static Sring carName;
+public static void setCarName(Sring carName) {
+	CarFactory.carName = carName;
+}
+
+}
