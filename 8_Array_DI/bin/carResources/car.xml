@@ -1,0 +1,33 @@
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN"
+"http://www.springframework.org/dtd/spring-beans-2.0.dtd">
+
+<beans>
+	<bean id="car" class="autoBean.Car">
+		<property name="carType">
+			<list>
+			<value>Mercedes-Benz</value>
+			<value>BMW-M12</value>
+			</list>
+		</property>
+		
+		<property name="carColor" value="BlueWhale">
+		</property>	
+		
+		<property name="engine" >
+			<list>
+				<ref bean="engine1"/>
+				<ref bean="engine2"/>
+			</list>
+		</property>
+	</bean>
+	
+	<bean id="engine1" class="autoBean.CarEngine">
+		<property name="engineYear" value="2015"></property>
+		<property name="engineMake" value="Benz"></property>
+	</bean>
+	<bean id="engine2" class="autoBean.CarEngine">
+		<property name="engineYear" value="2012"></property>
+		<property name="engineMake" value="BMW"></property>
+	</bean>
+	
+</beans>

@@ -1,0 +1,22 @@
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN"
+"http://www.springframework.org/dtd/spring-beans-2.0.dtd">
+
+<beans>
+	<!-- Oracle Connection -->
+	<bean id="dao" class="beans.DAO">
+		<property name="driver" value="oracle.jdbc.OracleDriver"></property>
+		<property name="url" value="jdbc:oracle:thin:@localhost:1521:xe"></property>
+		<property name="username" value="system"></property>
+		<property name="password" value="manager"></property>
+	</bean>
+	
+	<!--  MySQL Connection -->
+	<bean class="org.springframework.beans.factory.annotation.RequiredAnnotationBeanPostProcessor"></bean>
+	<bean id="dao1" class="beans.DAO">
+		<property name="driver" value="com.mysql.jdbc.Driver"></property>
+		<property name="url" value="jdbc:mysql://localhost:3306/test"></property>
+		<property name="username" value="root"></property>
+		<property name="password" value="root"></property>
+	</bean> 
+
+</beans>

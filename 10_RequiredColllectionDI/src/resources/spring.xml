@@ -1,0 +1,30 @@
+<beans 
+xmlns="http://www.springframework.org/schema/beans" 
+xmlns:util="http://www.springframework.org/schema/util" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.0.xsd http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util-2.0.xsd">
+
+	<bean id="t" class="beans.Test">
+		<property name="fruits">
+			<util:list list-class="java.util.Vector">
+				<value>Apple</value>
+				<value>Mango</value>
+				<value>Mango</value> <!-- Duplicate allow -->
+			</util:list>
+		</property>
+		<property name="cricketers">
+			<util:set set-class="java.util.TreeSet">
+				<value>Sachin</value>
+				<value>Shewag</value>
+				<value>Sachin</value> <!-- Ideally we should not pass duplicate value as Set will not allow -->
+			</util:set>
+		</property>
+		<property name="countryandcapitals">
+			<util:map map-class="java.util.Hashtable">
+				<entry key="India" value="Delhi"/>
+				<entry key="Germany" value="Berin"/>
+			</util:map>
+		</property>		
+	</bean>
+
+</beans>
